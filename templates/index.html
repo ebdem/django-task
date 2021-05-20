@@ -1,0 +1,25 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+        <div class="box" id="box">
+</div><br/>
+<button type="button" onclick="changeColor('red')">Red</button>
+<button type="button" onclick="changeColor('blue')">Blue</button>
+<button type="button" onclick="changeColor('green')">Green</button>
+<button type="button" onclick="changeColor('black')">Default</button>
+
+</body>
+<script>
+function changeColor(color)
+{
+   document.getElementById("box").style.background=color;
+}
+
+</script>
+</html>
